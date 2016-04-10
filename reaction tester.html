@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Reaction Tester</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="robots" content="index,follow" />
+	
+	<style type="text/css">
+		body {
+			font-family:Verdana, Geneva, sans-serif;
+		}
+		#box {
+			width: 200px;
+			height: 200px;
+			background-color:red;
+			display:none;
+			position:relative;
+			border-radius: 50px;
+		}
+		#time {
+			font-weight:bold;
+		}
+		#header {
+			text-align:center;
+			float:right;
+		}
+		#results {
+		}
+		#shape {
+			color:blue;
+			font-weight:bold;
+		}
+		#clicks {
+			color:red;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 id="header">Think you're fast?</h1>
+	<h2>Test your reaction here!</h2>
+	<p id="shape">Click on a shape as fast as you can</p>
+	<p>Your time is: <span id="time">0</span><em> second(s)</em></p>
+	<button id="results">Results</button>
+	<p>Recorded time:<span id="array">0</span></p>
+	<button id="mean">Fastest time</button>
+	<p>Your fastest reaction is :<span id="average">0</span></p>
+	<p>Number of Clicks: <span id="clicks">0</span></p>
+	<div id="box"></div>
+	<script type="text/javascript" src="reaction_time.js"></script>
+</body>
+</html>
